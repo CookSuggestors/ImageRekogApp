@@ -11,7 +11,8 @@ class amazon_api:
 
 
         # Source = '/Users/Minami-Yuta/就活用/サマーインターンシップ/Optim/img/yasai.jpg'   # 検索対象となる画像を定義
-        imageSource = open(img,'rb').read()
+        # imageSource = open(img,'rb').read()
+        imageSource = img
 
         # Amazon Rekognitionインスタンスを作成
         rekognition = boto3.client('rekognition',
