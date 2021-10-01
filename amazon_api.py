@@ -1,13 +1,13 @@
 import boto3
 from googletrans import Translator
 from dotenv import dotenv_values
+import os
 
 class amazon_api:
 
     def call_api(self, img):
-        env_info = dotenv_values(".env")
-        AWS_ACCESS_KEY_ID = env_info['AWS_ACCESS_KEY_ID'] # AWSのアクセスキーID
-        AWS_SECRET_ACCESS_KEY = env_info['AWS_SECRET_ACCESS_KEY'] # AWSのシークレットアクセスキー
+        AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID'] # AWSのアクセスキーID
+        AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY'] # AWSのシークレットアクセスキー
 
 
         # Source = '/Users/Minami-Yuta/就活用/サマーインターンシップ/Optim/img/yasai.jpg'   # 検索対象となる画像を定義
