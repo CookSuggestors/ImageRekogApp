@@ -1,3 +1,4 @@
+import os
 from os import error
 from flask import Flask, jsonify, request
 import amazon_api as API
