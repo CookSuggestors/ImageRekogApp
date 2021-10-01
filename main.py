@@ -18,6 +18,9 @@ def post_img():
     
     return jsonify(label_list)
 
+@app.route("/ping", methods=["GET"])
+def index():
+    return "ok"
 
 if __name__ == "__main__":
     app.run(host='127.0.0.1', port=8887, debug=True)
